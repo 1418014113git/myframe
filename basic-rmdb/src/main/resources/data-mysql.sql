@@ -1,0 +1,2 @@
+INSERT INTO `db_operator` (`statement`, `opt_type`, `opt_statement_type`, `opt_target`, `opt_value`, `opt_pk`, `before_opt`, `after_opt`, `opt_desc`) VALUES ('SEQUENCE-GET_ONE', 'RMDB', 'GET_ONE', 'db_sequence', 'UPDATE db_sequence SET sequence_id=sequence_id+increase_value, last_time=NOW() WHERE 1=1 and seq_name=#{seqName};
+select sequence_id as id from db_sequence where seq_name=#{seqName};', 'id', NULL, NULL, NULL);;

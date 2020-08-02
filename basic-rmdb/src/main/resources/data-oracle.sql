@@ -1,0 +1,1 @@
+INSERT INTO db_operator(statement, opt_type, opt_statement_type, opt_target, opt_value, opt_pk, before_opt, after_opt, OPT_VALUE_TYPE) VALUES ('SEQUENCE-GET_ONE', 'RMDB', 'GET_ONE', 'db_sequence', 'call SEQ_NEXT_VAL(#{seqName},#{id, mode=OUT, jdbcType=NUMERIC})', 'id', NULL, NULL, '1');;
